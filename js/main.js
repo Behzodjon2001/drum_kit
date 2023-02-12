@@ -4,14 +4,14 @@ for (let i = 0; i < letters; i++) {
     document.querySelectorAll(".button")[i].addEventListener("click", function() {
         let thisLetter = this.innerHTML;
         sound(thisLetter);
-        // animation(thisLetter);
+        animation(thisLetter);
     });
 }
 
 
 document.addEventListener("keypress", function(event) {
     sound(event.key);
-    // animation(event.key);
+    animation(event.key);
 });
 
 function sound(key) {
